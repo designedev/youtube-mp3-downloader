@@ -18,7 +18,7 @@ def main():
         success = embed_mp3_infos(title, artist, cover_image, mp3_file)
     
     if success:
-        print(f"✅ Tagging Completed({mp3_file.split("/")[-1]})")
+        print(f"✅ Tagging Completed({mp3_file.split('/')[-1]})")
     else:
         print(f"❌ Failed to tag MP3 file")
 
