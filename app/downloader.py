@@ -1,7 +1,7 @@
 import os
 import yt_dlp
 import requests
-from config import DOWNLOAD_FOLDER
+from config.config import DOWNLOAD_FOLDER
 
 def download_youtube_audio(youtube_url, output_folder=DOWNLOAD_FOLDER):
     output_folder = os.path.expanduser(output_folder)

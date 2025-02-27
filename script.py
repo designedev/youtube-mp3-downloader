@@ -3,9 +3,9 @@ import requests
 from mutagen.mp3 import MP3
 from mutagen.id3 import APIC, ID3, TIT2, TPE1
 import yt_dlp
-from config import DOWNLOAD_FOLDER
-from downloader import download_youtube_audio, download_thumbnail
-from mp3_handler import embed_mp3_infos
+from config.config import DOWNLOAD_FOLDER
+from app.downloader import download_youtube_audio, download_thumbnail
+from app.mp3_handler import embed_mp3_infos
 
 def main():
     if len(sys.argv) < 2:
